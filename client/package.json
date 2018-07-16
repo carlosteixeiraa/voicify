@@ -1,0 +1,32 @@
+{
+  "name": "voicify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "bin": "main.js",
+  "scripts": {
+    "start": "electron main",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-win": "electron-packager . voicify --overwrite --asar=true --platform=win32 --arch=ia32 --icon=icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Voicify\""
+  },
+  "keywords": [],
+  "author": "Carlos Teixeira",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.15.2",
+    "colors": "^1.3.0",
+    "connect-flash": "^0.1.1",
+    "console-title": "^1.1.0",
+    "cors": "^2.8.4",
+    "electron": "^2.0.5",
+    "express": "^4.16.3",
+    "spotify-local-control": "^1.1.1",
+    "spotify-web-api-node": "^3.1.1"
+  },
+  "pkg": {
+    "targets": [
+      "node8"
+    ]
+  }
+}

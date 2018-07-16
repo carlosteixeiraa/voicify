@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voicify - Control your Spotify client with your voice!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="icon" type="image/png" href="media/icon.png">
+
+</head>
+<body>
+    <div class="welcome">
+        <img src="media/logo.svg" class="hvr-pop">
+        <div class="w-ins">
+            <p>To start using Voicify just accept the notification of your browser asking for microphone permission, and then you just need to say PLAY the name of the song and the artist and that’s it. You can also ask Voicify to pause your music and RESUME it by saying PAUSE or resume.</p>
+            <button id="app" class="hvr-float">Go to Voicify</button>
+        </div>
+        <div class="m-cont">
+            <div class="middle">
+                <div class="m-left">
+                    <div class="ml-ins">
+                        <h4>NOW PLAYING</h4>
+                        <span id="name"> </span>
+                    </div>
+                </div>
+                <div class="m-right">
+                    <img class="hvr-shrink" id="buttons" src="media/stop.svg">
+                </div>
+            </div>            
+        </div>
+    </div>
+
+
+    <img src="media/bars.svg" id="bars">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107777292-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-107777292-3');
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
