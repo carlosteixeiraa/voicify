@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* #1DB954 / #393939 */
+
+body {
+    overflow: hidden;
+    font-family: 'Roboto';
+    background: #1DB954;
+}
+
+.info-page {
+    width: 100vw;
+    height: 100vh;
+    background: #1DB954;
+    position: fixed;
+    display: none;
+    color: white;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    padding: 70px 70px 70px 70px;
+    left: 0;
+    z-index: 1;
+}
+
+.info-page h3 {
+    font-size: 24px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.info-page p {
+    font-size: 17px;
+}
+
+#ten {
+    display: none;
+}
+
+.info-page span {
+    font-size: 14px;
+}
+
+.cen {
+    display: none;
+}
+
+.close {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+}
+
+.langs {
+    position: fixed;
+    top: 15px; left: 15px;
+    color: white;
+}
+
+.en:hover , .pt:hover {
+    cursor: pointer;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.close svg {
+    width: 62px;
+}
+
+.i-grid {
+    padding: 40px 0px;
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.info-page h2 {
+    font-size: 32px;
+    color: #393939;
+    text-transform: uppercase;
+}
+
+#info {
+    position: fixed;
+    top: 15px;
+    width: 32px;
+    right: 15px;
+}
+
+#bars {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -999;
+    left: 0;
+}
+
+.welcome {
+    text-align: center;
+    padding: 40px 0px 40px 0px;
+}
+
+.welcome img {
+    width: 180px;    
+}
+
+.welcome p {
+    padding: 40px 35vw 40px 35vw;
+    color: white;
+}
+
+.welcome button {
+    background: #393939;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    padding: 13px 30px 13px 30px;
+    color: #1DB954;
+}
+
+.m-cont {
+    display: block;
+}
+
+.w-ins {
+    display: none;
+}
+
+.middle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    padding: 70px 20vw 50px 20vw;
+}
+
+.middle > div {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttons svg {
+    width: 140px;
+    height: 140px;
+}
+
+.middle h4 {
+    color: #393939;
+    font-size: 28px;
+}
+
+.middle span {
+    color: white;
+    font-size: 17px;
+}
+
