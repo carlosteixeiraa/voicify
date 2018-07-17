@@ -20,7 +20,7 @@
             <div class="middle">
                 <div class="m-left">
                     <div class="ml-ins">
-                        <h4>NOW PLAYING</h4>
+                        <h4 id="np">A TOCAR AGORA</h4>
                         <span id="name"> </span>
                     </div>
                 </div>
@@ -31,9 +31,62 @@
         </div>
     </div>
 
+    <div class="info-page">
+        <h2 id="ih">Informações / Ajuda</h2>
+        <div class="i-grid">
+            <div class="i-div">
+                <h3 id="htu">Como usar</h3>
+                <br>
+                <p id="tpt">É muito simples usar o Voicify, já que você está aqui eu suponho que você já tenha baixado o cliente, então tudo funciona, agora é necessário abrir o Spotify Client e o Voicify Client e depois abrir o WebListener, aceitar as permissões para o microfone , agora basta dizer um dos comandos na próxima coluna e pronto!</p>
+                <p id="ten">It is very simple to use Voicify, since you are here I suppose you have already downloaded the client, so everything works it is necessary to open the Spotify Client and the Voicify Client and then open the WebListener, accept the permissions for the microphone, then say one of the commands in the next column and that's it!</p>
+            </div>
+            <div class="i-div">
+                <h3 id="cmd">Comandos</h3>
+                <br>
+                <div class="cen">
+                    <p>PLAY nameofthesong</p>
+                    <span>ex. PLAY Milky Chance - Doing Good</span>
+                    <br><br>
+                    <p>PAUSE</p>
+                    <br>
+                    <p>RESUME</p>
+                </div>
+                <div class="cpt">
+                    <p>TOCA nomedamusica</p>
+                    <span>ex. TOCA Milky Chance - Doing Good</span>
+                    <br><br>
+                    <p>PARA</p>
+                    <br>
+                    <p>CONTINUA</p>
+                </div>
+            </div>
+            <div class="i-div">
+                <h3>Downloads</h3>
+                <br>
+                <a href="downloads/voicify-win32.rar"><p>▼ Client Beta Win32</p></a>
+
+            </div>
+        </div>
+        <img src="media/bars.svg" id="bars">
+        <div class="close">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="10" height="84" transform="translate(26.766 33.8371) rotate(-45)" fill="white"/>
+                <rect width="10" height="84" transform="translate(33.837 93.234) rotate(-135)" fill="white"/>
+            </svg>    
+        </div>
+    </div>
+
+    <div class="langs">
+        <span class="pt active">PT</span>
+        <span> / </span>
+        <span class="en">EN</span>
+    </div>
+
 
     <img src="media/bars.svg" id="bars">
 
+    <img class="hvr-float" src="media/info.svg" id="info">
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107777292-3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];

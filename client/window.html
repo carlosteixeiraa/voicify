@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Voicify</title>
+    <title>Voicify Client Beta</title>
     <link rel="stylesheet" href="hover.css">
     <style type="text/css">
         body {
@@ -18,6 +18,7 @@
         }
 
         .logo {
+            padding-top: 20px;
             height: 130px;
             display: flex;
             align-content: center;
@@ -28,11 +29,24 @@
         .info {
             height: 320px;
         }
-        
+
+        .minimize {
+            width: 55px;
+            background:#1CA74D;
+            position: fixed;
+            top: 0;
+            right: 55px;
+            height: 35px;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+        }
+
         .close {
             width: 55px;
-            background: #393939;
             position: fixed;
+            background:#1CA74D;
             top: 0;
             right: 0;
             height: 35px;
@@ -43,6 +57,10 @@
         }
 
         .close svg {
+            width: 28px;
+        }
+
+        .minimize svg {
             width: 32px;
         }
 
@@ -89,10 +107,15 @@
     </style>
 </head>
 <body>
-    <div id="close" onclick="w.close();" class="close">
+    <div onclick="w.close();" class="close">
         <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="10" height="84" transform="translate(26.766 33.8371) rotate(-45)" fill="white"/>
             <rect width="10" height="84" transform="translate(33.837 93.234) rotate(-135)" fill="white"/>
+        </svg>
+    </div>
+    <div onclick="w.hide();" class="minimize">
+        <svg width="32" height="5" viewBox="0 0 32 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" transform="translate(0 10) rotate(-90)" fill="white"/>
         </svg>
     </div>
     <div class="grid">
@@ -111,7 +134,7 @@
             <div class="i-ins">
                 <p>Now that your Voicify client is running make sure you have the Spotify Client opened too and then click on the following button.<br><br><span>Please don't close this window so that Voicify can comunicate with your computer.</span></p><br>
                 <a onclick="shell.openExternal('https://carlosteixeira.xyz/voicify');">
-                    <button class="hvr-shrink">Open WebAPP</button>
+                    <button class="hvr-float">WebListener</button>
                 </a>
             </div>
         </div>
